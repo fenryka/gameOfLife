@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "gameoflife"
+version = "0.1.0"
+description = ""
+authors = ["Katelyn Faith Baker <kat@generative.vision>"]
+readme = "README.md"
+#packages = [{include = "gameoflife"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "7.4.4"
+pillow = "10.2.0"
+click = "^8.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 99
+
+[tool.poetry.scripts]
+play = "gameoflife.main:cli"
